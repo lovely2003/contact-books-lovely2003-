@@ -1,10 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+createApp(App).use(router).mount('#app');
